@@ -11,15 +11,15 @@ Data for this project was pulled from a compiled dataset of Amazon Beauty produc
 
 Our review data contained 198,502 reviews from 22,363 reviewers. The reviews spanned across 12,101 unique products. Reviews ranged on a scale of 1-5. A majority of reviews received an overall review of 5, which could be a limitation to our model. 
 
-**Insert graph of review distributions here
+[Review Distributions](./images/reviews_distribution.png)
 
 A majority of our ratings received under 10 ratings.
 
-**Insert graph of distribution of ratings per product here
+[Reviews per Product](./images/reviews_per_product.png)
 
 A majority of our users rated under 10 products.
 
-**Insert graph of distribution of number of ratings per user here
+[Ratings per User](./images/reviews_per_user.png)
 
 Our Meta Data contained 259,204 unique products. 
 

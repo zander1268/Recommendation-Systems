@@ -6,7 +6,7 @@ This project aims to create a recommendation system for the Amazon marketing tea
 
 ## Business Problem
 
-## Data Understanding
+## Data Understanding and Preparation
 Data for this project was pulled from a compiled dataset of Amazon Beauty product reviews and meta data in two seperate JSON files. The datasets can be found here (LINK TO SITE). We utlized the smaller dataset known as 5-core which contained data for products and reviewers with at least 5 entries. 
 
 Our review data contained 198,502 reviews from 22,363 reviewers. The reviews spanned across 12,101 unique products. Reviews ranged on a scale of 1-5. A majority of reviews received an overall review of 5, which could be a limitation to our model. 
@@ -22,8 +22,6 @@ A majority of our users rated under 10 products.
 ![Ratings per User](./images/reviews_per_user.png)
 
 Our Meta Data contained 259,204 unique products. 
-
-## Data Preparation
 
 Our data did not require much cleaning. We selected the appropriate columns of our model to utilize for surprise, which included 'reviewerID', 'asin', and 'overall'. This data contained our unique reviewer ID, unique product ID, and overall rating on a scale of 1-5.
 
@@ -48,14 +46,14 @@ Our additional final model allows us to input the unique reviewerID, the number 
 
 ## Repository Structure
 ```
-├── Working_Notebooks
-│   ├── working_notebok_here
-│   ├── working_notebok_here
-├── visualizations
-│   ├── visualization_here
-│   ├── visualization_here
-│   ├── visualization_here
-├── Data
+├── data
+│   ├── meta_Beauty.json.gz
+│   ├── reviews_Beauty_5.json.gz
+├── images
+│   ├── reviews_distribution.png
+│   ├── reviews_per_product.png
+│   ├── reviews_per_user.png
+├── working_notebooks
 │   ├── review_data
 │   ├── meta_data
 ├── .gitignore

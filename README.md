@@ -13,30 +13,32 @@ Our review data contained 198,502 reviews from 22,363 reviewers. The reviews spa
 
 ![Review Distributions](./images/reviews_distribution.png)
 
-A majority of our ratings received under 10 ratings.
+Here we see a distribution of the number of reviews each product has received. A majority of our ratings received under 10 ratings.
 
 ![Reviews per Product](./images/reviews_per_product.png)
 
-A majority of our users rated under 10 products.
+Here we see a distribution of the number of reviews each user has completed. We see a majority of our users rated under 10 products.
 
 ![Ratings per User](./images/reviews_per_user.png)
 
-Our Meta Data contained 259,204 unique products. 
+Our Meta Data contained 259,204 unique products. We looked further into the Beauty subcategories to create a recommendation system to return items specifically in that subcategory. We found that the six subcategories related to Beauty are: Skin Care', 'Tools & Accessories', 'Makeup', 'Hair Care', 'Bath & Body', and 'Fragrance'.
 
 Our data did not require much cleaning. We selected the appropriate columns of our model to utilize for surprise, which included 'reviewerID', 'asin', and 'overall'. This data contained our unique reviewer ID, unique product ID, and overall rating on a scale of 1-5.
 
 ## Methods
 
-We utilized a Normal Predictor model for our initial model.
+We utilized a Normal Predictor model for our initial model, which returned an RMSE of 1.5. We iterated through the following model algorithms to assess which models to further explore: SVD(), SVDpp(), SlopeOne(), NMF(), NormalPredictor(), KNNBaseline(), KNNBasic(), KNNWithMeans(), KNNWithZScore(), BaselineOnly(), and CoClustering(). Our results were based on cross validation and returning the RMSE for each model, along with the fit time and test time. The top 3 models according to Test RMSE were SVDpp, SVD, and Baseline Only. Based on these results, we chose those 3 models to explore further.
+
+We ran multiple grid searchs to test hyperparameters for SVDpp and SVD. Our best model based on RMSE was an SVD model with the following paramenters specified: (n_factors=2, n_epochs=20, biased=True).
+
 
 ## Final Collaborative Filtering Models
-Model that returns recommendations across all categories vs being able to select category.
 
-Our final model allows us to input the unique reviewerID and number of recommendations we would like the model to return. The model then returns the requested number of items, including the ASIN, Product Name, Description, and Image.
+Our final model allows us to input the unique reviewerID and number of recommendations we would like the model to return. The model then returns the requested number of items, including the ASIN, Product Name, Description, Image, and predicted_rating. Recommended products are ordered from the highest predicted_rating to the lowest.
 
 ![](./images/recommended_products.png)
 
-Our additional final model allows us to input the unique reviewerID, the number of recommendations we would like the model to return, and the category of product we would like our recommended products to be. The model then returns the requested number of items, including the ASIN, Product Name, Description, and Image.
+Our additional final model allows us to input the unique reviewerID, the number of recommendations we would like the model to return, and the category of product we would like our recommended products to be. The model then returns the requested number of items, including the ASIN, Product Name, Description, and Image. This will be especially helpful when trying to promote certain items at certain times of year, like Fragrances around Valentine's Day or Skin Care products in the winter time. 
 
 ![](./images/recommended_fragrance_products.png)
 

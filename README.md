@@ -38,7 +38,7 @@ Our final model allows us to input the unique reviewerID and number of recommend
 
 Our additional final model allows us to input the unique reviewerID, the number of recommendations we would like the model to return, and the category of product we would like our recommended products to be. The model then returns the requested number of items, including the ASIN, Product Name, Description, and Image.
 
-![](./images/recommended_fragrance_products.png.png)
+![](./images/recommended_fragrance_products.png)
 
 ## Conclusion
 

@@ -34,11 +34,11 @@ Model that returns recommendations across all categories vs being able to select
 
 Our final model allows us to input the unique reviewerID and number of recommendations we would like the model to return. The model then returns the requested number of items, including the ASIN, Product Name, Description, and Image.
 
-**insert image of returned recommendations
+![](./images/recommended_products.png)
 
 Our additional final model allows us to input the unique reviewerID, the number of recommendations we would like the model to return, and the category of product we would like our recommended products to be. The model then returns the requested number of items, including the ASIN, Product Name, Description, and Image.
 
-**insert image of returned recommendations for one user in Hair Care vs. Fragrance
+![](./images/recommended_fragrance_products.png.png)
 
 ## Conclusion
 
@@ -50,6 +50,8 @@ Our additional final model allows us to input the unique reviewerID, the number 
 │   ├── meta_Beauty.json.gz
 │   ├── reviews_Beauty_5.json.gz
 ├── images
+│   ├── recommended_fragrance_products.png
+│   ├── recommended_products.png
 │   ├── reviews_distribution.png
 │   ├── reviews_per_product.png
 │   ├── reviews_per_user.png

@@ -87,6 +87,6 @@ The Amazon marketing team can implement our recommendation tools quickly and wit
 ├── LICENSE
 ├── README.md
 ├── final_notebook.ipynb
-├── presentation.pdf
+├── final_presentation.pdf
 └── final_notebook.pdf
 ```

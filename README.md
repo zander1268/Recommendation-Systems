@@ -59,7 +59,9 @@ While our model optimizes for minimizing the RMSE of predicted reviews, it has i
 
 Secondly,  our model does not handle indiscriminate reviewers - or reviewers who rate all products the same. This means that our model does not capture their preferences well. We suggest a separate survey be sent to these buyers post-purchase in an effort to determine their preferences. We could then find a way to incorporate these preferences in a future model. 
 
-Third, our model does not address the cold start problem. Our model needs prior reviews from u sers in order to offer recommendations. Next steps would be to add a content-based approad to address this problem.
+Third, our model does not address the cold start problem. Our model needs prior reviews from users in order to offer recommendations. Next steps would be to add a content-based approad to address this problem.
+
+Finally, we noticed that the dataset often miscategorizes products in their subcategories (haircare, skincare, etc.), which can lead our subcategory predictor to recommend misclassified products. We recommend implementing a standardized classification of subcategories when new products are added to the marketplace. 
 
 ## Conclusion
 

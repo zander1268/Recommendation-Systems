@@ -64,7 +64,7 @@ The Amazon marketing team can implement our recommendation tools quickly and wit
 
 ## Repository Structure
 ```
-├── data
+├── Data
 │   ├── meta_Beauty.json.gz
 │   ├── reviews_Beauty_5.json.gz
 ├── images
@@ -74,12 +74,14 @@ The Amazon marketing team can implement our recommendation tools quickly and wit
 │   ├── reviews_per_product.png
 │   ├── reviews_per_user.png
 ├── working_notebooks
-│   ├── review_data
-│   ├── meta_data
+│   ├── Alex_notebook_2.ipynb
+│   ├── Alex_notebook_metadata.ipynb
+│   ├── jillian_notebook.ipynb
+│   ├── meg_notebook.ipynb
 ├── .gitignore
-├── LICENSE.md
+├── LICENSE
 ├── README.md
-├── notebook.pdf
+├── final_notebook.ipynb
 ├── presentation.pdf
-└── student.ipynb
+└── final_notebook.pdf
 ```

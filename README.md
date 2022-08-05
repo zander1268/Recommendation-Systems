@@ -2,7 +2,7 @@
 Authors: Margaret Boland, Jillian Clark, and Alex FitzGerald
 
 ## Overview
-This project aims to create a recommendation system for the Amazon marketing team to utilize to send targeted recommendation e-mails to users who have purchased and rated products within 30 days. A collaborative approach was taken, meaning recommendations will be made by comparing similar reviewer profiles based on existing ratings. 
+For the purpose of this project, we are a team of internal data scientists at Amazon. This project aims to create a recommendation system for the Amazon marketing team to utilize to send targeted recommendation e-mails to users who have purchased and rated products within 30 days. A collaborative approach was taken, meaning recommendations will be made by comparing similar reviewer profiles based on existing ratings. 
 
 ## Business Problem
 
@@ -56,7 +56,11 @@ While our model optimizes for minimizing the RMSE of predicted reviews, it has i
 
 Secondly,  our model does not handle indiscriminate reviewers - or reviewers who rate all products the same. This means that our model does not capture their preferences well. We suggest a separate survey be sent to these buyers post-purchase in an effort to determine their preferences. We could then find a way to incorporate these preferences in a future model. 
 
+Third, our model does not address the cold start problem. Our model needs prior reviews from u sers in order to offer recommendations. Next steps would be to add a content-based approad to address this problem.
+
 ## Conclusion
+
+The Amazon marketing team can implement our recommendation tools quickly and with ease in order to offer more individualized recommendations for users. This will increase user engagement and user purchases. Our model can also be used to market certain types of products that may be popular seasonally, such as sending out individualized Skin Care recommendations in the winter time/dry season, or Fragrance recommendations around gift-giving occassions such as Valentine's Day.
 
 ## Repository Structure
 ```

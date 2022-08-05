@@ -46,7 +46,7 @@ Our additional final model allows us to input the unique reviewerID, the number 
 ![](./images/recommended_fragrance_products.png)
 
 ## Final Model Evaluation
-The final recommendation model using  SVD yielded a RMSE of XX meaning that, on average, our predicted review scores for Amazon buyers were XX points off of the true value of review scores. This score is more than half a point drop from our baseline model. On a review scale of 1- 5, we believe that is a significant improvement. 
+The final recommendation model using  SVD yielded a RMSE of 1.08 meaning that, on average, our predicted review scores for Amazon buyers were 1.08 points off of the true value of review scores. This score is more than half a point drop from our baseline model. On a review scale of 1- 5, we believe that is a significant improvement. 
 
 The model also has other features that greatly improves the personalization of a post-purchase marketing email: 
 - No repeat products. The model will not recommend items that the buyer has already purchased. This helps improve product discoverability. 

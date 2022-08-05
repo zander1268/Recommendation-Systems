@@ -42,9 +42,21 @@ Our additional final model allows us to input the unique reviewerID, the number 
 
 ![](./images/recommended_fragrance_products.png)
 
-## Conclusion
+## Final Model Evaluation
+The final recommendation model using  SVD yielded a RMSE of XX meaning that, on average, our predicted review scores for Amazon buyers were XX points off of the true value of review scores. This score is more than half a point drop from our baseline model. On a review scale of 1- 5, we believe that is a significant improvement. 
 
-## Next Steps
+The model also has other features that greatly improves the personalization of a post-purchase marketing email: 
+- No repeat products. The model will not recommend items that the buyer has already purchased. This helps improve product discoverability. 
+- Prioritizes the best match for the buyer. Whether the model is recommended through the catalog of products, or through a sub category, it will always deliver N number of the top predicted reviews for a buyer. 
+- Subcategory filtering. The model allows for filtering beauty products based on six subcategories, allowing a more refined search. 
+- Image retrieval. The model converts the URL to an image and delivers this image alongside recommended titles and descriptions.
+
+## Limitations and Next Steps
+While our model optimizes for minimizing the RMSE of predicted reviews, it has its limitations. First, our dataset was skewed towards higher ratings as nearly 60% of all reviews were rated 5 points. This in turn skews our predicted values higher. While this may not matter when grabbing the highest rated products, it certainly would affect our lower rated items. We suggest looking into whether these high ratings are a product of the dataset we used, or are consistent with Amazon buyer behavior. 
+
+Secondly,  our model does not handle indiscriminate reviewers - or reviewers who rate all products the same. This means that our model does not capture their preferences well. We suggest a separate survey be sent to these buyers post-purchase in an effort to determine their preferences. We could then find a way to incorporate these preferences in a future model. 
+
+## Conclusion
 
 ## Repository Structure
 ```

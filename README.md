@@ -1,6 +1,6 @@
 # Recommendation-Systems for Amazon Beauty Products
 Authors: Margaret Boland, Jillian Clark, and Alex FitzGerald
-
+![beauty recommendations header](images/personalized_beauty_product_recommendations_header.png)
 ## Overview
 For the purpose of this project, we are a team of internal data scientists at Amazon. This project aims to create a recommendation system for the Amazon marketing team to utilize to send targeted recommendation e-mails to users who have purchased and rated products within 30 days. A collaborative approach was taken, meaning recommendations will be made by comparing similar reviewer profiles based on existing ratings. 
 

@@ -7,7 +7,7 @@ For the purpose of this project, we are a team of internal data scientists at Am
 ## Business Problem
 
 ## Data Understanding and Preparation
-Data for this project was pulled from a compiled dataset of Amazon Beauty product reviews and meta data in two seperate JSON files. The datasets can be found here (LINK TO SITE). We utlized the smaller dataset known as 5-core which contained data for products and reviewers with at least 5 entries. 
+Data for this project was pulled from a compiled dataset of Amazon Beauty product reviews and meta data in two seperate JSON files. The datasets can be found [here](http://jmcauley.ucsd.edu/data/amazon/links.html). We utlized the smaller dataset known as 5-core which contained data for products and reviewers with at least 5 entries. 
 
 Our review data contained 198,502 reviews from 22,363 reviewers. The reviews spanned across 12,101 unique products. Reviews ranged on a scale of 1-5. A majority of reviews received an overall review of 5, which could be a limitation to our model. 
 
